@@ -35,3 +35,7 @@ function init() {
 }
 
 init();
+
+console.log("test")
+
+// testing
