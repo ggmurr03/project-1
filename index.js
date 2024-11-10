@@ -25,6 +25,8 @@ function renderCharacters() {
                 charLi.appendChild(charPBio);
                 charLi.appendChild(levelBtn);
 
+                levelBtn.addEventListener("click", ()=> lvlHandler(charP,character.id));
+
                 ul.appendChild(charLi);
             });
         });
@@ -57,6 +59,8 @@ function addNewChar(){
         charLi.appendChild(charPBio);
         charLi.appendChild(levelBtn);
 
+        levelBtn.addEventListener("click", ()=> lvlHandler(charP));
+
         ul.appendChild(charLi);
         console.log("character created");
 
@@ -76,6 +80,30 @@ function addNewChar(){
       }
    )
 
+}
+
+function lvlHandler(charP, charId){
+    //get lvl integer value
+    let numLvl = parseInt(charP.textContent.replace("Level: ", ""));
+
+    //increment level by +1
+    numLvl++;
+
+    //reinsert
+    charP.textContent = `Level: ${numLvl}`;
+    //message
+    alert("Level increased!!!");
+
+
+fetch(`http://localhost:3000/characters/${charId}`, {
+    method: "PATCH",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({level: numLvl})
+}).then(resp=>resp.json())
+.then(data=> console.log("PATCH"))
+.catch(error=> console.error(error))
 }
 
 
