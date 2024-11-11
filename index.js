@@ -59,7 +59,7 @@ function addNewChar(){
         charLi.appendChild(charPBio);
         charLi.appendChild(levelBtn);
 
-        levelBtn.addEventListener("click", ()=> lvlHandler(charP));
+        //levelBtn.addEventListener("click", ()=> lvlHandler(charP));
 
         ul.appendChild(charLi);
         console.log("character created");
@@ -67,7 +67,7 @@ function addNewChar(){
         const charObj = {
             name: charH2.textContent,
             image: imgElement.src,
-            level: charP.textContent,
+            level: parseInt(charP.textContent.replace("Level: ", "")),
             biography: charPBio.textContent};
         
         fetch("http://localhost:3000/characters", {
@@ -75,7 +75,10 @@ function addNewChar(){
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(charObj)
         }).then(resp => resp.json())
-        .then(data => console.log(data))
+        .then(data => {
+            console.log(data);
+            levelBtn.addEventListener("click", ()=> lvlHandler(charP, data.id));
+        })
         .catch(error =>console.error(error))
       }
    )
