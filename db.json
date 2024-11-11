@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Cloud",
       "image": "https://i.imgur.com/LUZNGNgb.jpg",
-      "level": 24,
+      "level": 30,
       "biography": "Former First Class SOLDIER. After defecting from Shinra, Cloud began work as a mercenary for hire in Midgar. With his trusty broadsword in hand, he always gets the job done."
     },
     {
@@ -18,7 +18,7 @@
       "id": 3,
       "name": "Aeris",
       "image": "https://i.imgur.com/XUqn2qPb.jpg",
-      "level": 17,
+      "level": 19,
       "biography": "She wields a rod, but her strength lies in her magic use."
     },
     {
@@ -53,21 +53,21 @@
       "id": 8,
       "name": "Yuffie",
       "image": "https://i.imgur.com/GF4qmjKb.jpg",
-      "level": 12,
+      "level": 14,
       "biography": "Cunning and sly, she may look like a common thief, but Yuffie is a very skilled and powerful ninja..."
     },
     {
       "id": 9,
       "name": "Sephiroth",
       "image": "https://i.imgur.com/6EaZcL1b.jpg",
-      "level": 90,
+      "level": 96,
       "biography": "There was one SOLDIER named Sephiroth, who was better than the rest, but when he found out about the terrible experiments that made him, he began to hate Shinra. And then, over time, he began to hate everything."
     },
     {
       "name": "Moogle",
       "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
-      "level": "Level: 1",
-      "biography": "Hey Yo!",
+      "level": 2,
+      "biography": "Hey",
       "id": 10
     }
   ]
