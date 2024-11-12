@@ -18,7 +18,7 @@
       "id": 3,
       "name": "Aeris",
       "image": "https://i.imgur.com/XUqn2qPb.jpg",
-      "level": 19,
+      "level": 20,
       "biography": "She wields a rod, but her strength lies in her magic use."
     },
     {
@@ -66,9 +66,37 @@
     {
       "name": "Moogle",
       "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
-      "level": 2,
+      "level": 3,
       "biography": "Hey",
       "id": 10
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "level": 4,
+      "biography": "hey",
+      "id": 11
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "level": 2,
+      "biography": "hey",
+      "id": 12
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "level": 1,
+      "biography": "hey",
+      "id": 13
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "level": 3,
+      "biography": "ads",
+      "id": 14
     }
   ]
 }

@@ -77,7 +77,7 @@ function addNewChar() {
         charLi.appendChild(levelBtn);
 
         // Add event listener for leveling up
-        levelBtn.addEventListener("click", () => lvlHandler(charP));
+        // levelBtn.addEventListener("click", () => lvlHandler(charP));
 
         // Append the new character card to the list
         ul.appendChild(charLi);
