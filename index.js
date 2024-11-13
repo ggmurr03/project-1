@@ -76,8 +76,6 @@ function addNewChar() {
         charLi.appendChild(charPBio);
         charLi.appendChild(levelBtn);
 
-        // Add event listener for leveling up
-        // levelBtn.addEventListener("click", () => lvlHandler(charP));
 
         // Append the new character card to the list
         ul.appendChild(charLi);
@@ -109,15 +107,15 @@ function addNewChar() {
     });
 }
 
-function lvlHandler(charP, charId) {
+function lvlHandler(charLvl, charId) {
     // Get the current level from the paragraph text
-    let numLvl = parseInt(charP.textContent.replace("Level: ", ""));
+    let numLvl = parseInt(charLvl.textContent.replace("Level: ", ""));
 
     // Increment the level
     numLvl++;
 
     // Update the level text
-    charP.textContent = `Level: ${numLvl}`;
+    charLvl.textContent = `Level: ${numLvl}`;
     
     // Show a message to notify the level up
     alert("Level increased!!!");
@@ -140,4 +138,4 @@ function init() {
 
 init();
 
-console.log("Test");
+
